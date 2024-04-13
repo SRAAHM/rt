@@ -1,0 +1,55 @@
+project/
+│
+├── config/
+│   └── database.php
+│
+├── views/
+│   ├── auth/
+│   │   ├── login.php
+│   │   └── external_form.php
+│   │
+│   ├── home/
+│   │   └── index.php
+│   │
+│   ├── specialization/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── state/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── hai/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── district/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── school/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── type/
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   └── templates/
+│       └── header.php
+│       └──footer.php
+└── public/
+    ├── css/
+    │   └── style.css
+    │
+    ├── js/
+    │   └── script.js
+    │
+    ├── index.php
+    └── backend.php

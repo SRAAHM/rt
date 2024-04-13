@@ -1,0 +1,48 @@
+<?php
+// Define the number of teachers and examination centers
+$numberOfTeachers = 20;
+$numberOfCenters = 5;
+
+// Create an array to store the teachers and their assigned examination centers
+$teacherCenters = [];
+
+// Distribute teachers to examination centers
+for ($i = 1; $i <= $numberOfTeachers; $i++) {
+    $centerNumber = ($i % $numberOfCenters) + 1;
+    $teacherCenters["Teacher " . $i] = "Center " . $centerNumber;
+}
+
+// Display the assigned examination centers for each teacher
+foreach ($teacherCenters as $teacher => $center) {
+    echo "$teacher is assigned to $center <br>";
+}
+?>
+
+Daily quota: 2/3
+ENG | ES | عربي | 中文 | فارسی
+
+خوارزمية توزيع الأساتذة لمراكز الإمتحانات بدون تكرار في نفس اليوم php كود
+
+<?php
+// قائمة بأسماء المدرسين
+$teachers = array("Teacher1", "Teacher2", "Teacher3", "Teacher4", "Teacher5");
+
+// قائمة بأسماء مراكز الامتحانات
+$examCenters = array("Center1", "Center2", "Center3", "Center4");
+
+// توليد توزيع الاساتذة على المراكز بدون تكرار في نفس اليوم
+$assignments = array();
+foreach ($examCenters as $center) {
+    $teacherIndex = array_rand($teachers);
+    $assignments[$center] = $teachers[$teacherIndex];
+    unset($teachers[$teacherIndex]);
+}
+
+// طباعة التوزيع
+foreach ($assignments as $center => $teacher) {
+    echo "المركز: " . $center . ", المدرس: " . $teacher . "<br>";
+}
+?>
+
+Daily quota: 1/3
+ENG | ES | عربي | 中文 | فارسی
